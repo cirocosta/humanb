@@ -1,0 +1,14 @@
+{
+  "name": "bhuman",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cirocosta/humanb",
+  "description": "Bytes to Human bytes",
+  "authors": [
+    "Ciro S. Costa <ciro.costa@usp.br>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ]
+}

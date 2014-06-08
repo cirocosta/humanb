@@ -1,4 +1,4 @@
-module.exports = function (b) {
+function humanb (b) {
   'use strict';
 
   var t = 1024
@@ -12,3 +12,5 @@ module.exports = function (b) {
 
   return b.toFixed(1) + ' ' + units[u];
 };
+
+if (module) module.exports = humanb;
