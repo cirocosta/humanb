@@ -2,7 +2,8 @@
 
 var humanb = require('./humanb')
  ,	assert = require('assert')
- ,	exp = [
+ ,	exp = [	
+ 			{a: '100', e: '100 B'},
 			{a: '1024', e: '1.0 KiB'},
 			{a: 1024, e: '1.0 KiB'},
 			{a: 1127, e: '1.1 KiB'},
