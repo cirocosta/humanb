@@ -1,4 +1,4 @@
-# humanb
+# humanb [![Build Status](https://travis-ci.org/cirocosta/humanb.svg?branch=master)](https://travis-ci.org/cirocosta/humanb)
 
 > Transforms a given filesize into a more readable form
 
