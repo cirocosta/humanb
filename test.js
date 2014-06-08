@@ -3,7 +3,9 @@
 var humanb = require('./humanb')
  ,	assert = require('assert')
  ,	exp = [
+			{a: '1024', e: '1.0 KiB'},
 			{a: 1024, e: '1.0 KiB'},
+			{a: 1127, e: '1.1 KiB'},
 			{a: 1024*2, e: '2.0 KiB'},
 			{a: 1024*1024, e: '1.0 MiB'},
 			{a: 1024*1024*1024, e: '1.0 GiB'},
@@ -11,8 +13,11 @@ var humanb = require('./humanb')
 		];
 
 describe('Bhuman, ', function () {
-	for (var i in exp)
-		it('should convert ' + exp[i]['a'] + 'to: ' + exp[i]['e'], function () {
-			assert.equal(humanb(exp[i]['a']), exp[i]['e']);
-		});
+	it('should convert properly', function () {
+		for (var i in exp) {
+			var errorMsg = exp[i]['a'] + ' did not convert to ' + exp[i]['e'];
+
+			assert.equal(humanb(exp[i]['a']), exp[i]['e'], errorMsg);
+		}
+	});
 });
