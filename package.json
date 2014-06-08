@@ -1,0 +1,14 @@
+{
+  "name": "humanb",
+  "version": "0.0.1",
+  "description": "Converts Bytes to Human Bytes",
+  "main": "humanb.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "Ciro S. Costa <ciro9758@gmail.com> (http://www.cirocosta.com.br/)",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^1.20.1"
+  }
+}
