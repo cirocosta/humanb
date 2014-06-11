@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+var humanb = require('../humanb.js');
+
+if (process.stdin.isTTY) {
+	console.log(humanb(process.argv[2]));
+	process.exit(0);
+}
+
+var data = '';
+
+process.stdin.setEncoding('utf8');
+process.stdin.on('readable', function () {
+  var chunk = process.stdin.read();
+
+  if (chunk) data += chunk;
+});
+
+process.stdin.on('end', function () {
+  console.log(humanb(data));
+  process.exit(0);
+});
